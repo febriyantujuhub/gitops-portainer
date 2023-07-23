@@ -2,6 +2,8 @@ version: '3.7'
 services:
   nginx:
     image: nginx:alpine
-    replicas: 2
     ports:
       - "8088:80"
+    deploy:
+      replicas: 2
+      mode: replicated
