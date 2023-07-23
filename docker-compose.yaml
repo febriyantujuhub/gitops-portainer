@@ -3,5 +3,5 @@ services:
   nginx:
     image: nginx:alpine
     deploy:
-      replicas: 3
+      replicas: 1
       mode: replicated
